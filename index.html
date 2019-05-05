@@ -31,6 +31,12 @@
             color: black;
         }
 
+        .page-break {
+            page-break-before: always;
+            margin: 0;
+            padding: 0;
+        }
+
         @media print {
             body {
                 padding: 0;
@@ -39,6 +45,10 @@
 
             a {
                 text-decoration: none !important;
+            }
+
+            .page-break {
+                height: 80px;
             }
         }
 
@@ -52,6 +62,7 @@
             margin: 0 auto;
             width: 100%;
             padding: 50px;
+            padding-right: 100px;
         }
 
         h1 {
@@ -112,7 +123,7 @@
         .heading {
             text-align: center;
             margin-bottom: 40px;
-            margin-top: 40px;
+            margin-top: 60px;
         }
 
         .heading.boxed {
@@ -159,6 +170,7 @@
         .header {
             background-color: #eee;
             margin: -50px;
+            margin-right: -100px;
             margin-bottom: 40px;
             padding: 30px;
             padding-top: 50px;
@@ -336,6 +348,7 @@
                     <hr />
             </div>
         </div>
+        <P class="page-break"></P>
         <div class="row about-box">
             <div class="col-1 time">
                 Aug 2010<br />- Jun 2015
@@ -372,38 +385,37 @@
             <hr />
         </div>
 
-        <div class="row education">
-            <div class="col-6">
+        <div class="education">
                 <div class="row about-box">
                     <div class="col-1 time">
                         2013<br />- 2015
                     </div>
                     <div class="col content">
-                        <h4>MSc in Systems Design <small class="text-muted">Remote Sytems</small></h4>
+                        <h4>MSc. in Systems Design with Distinction <small class="text-muted">Remote Sytems</small></h4>
                             <strong class="location">Carinthia University of Applied Sciences / Villach,
                                 Austria</strong>
                             <strong class="location">Master's Thesis at Polytechnic University of Catalonia / Barcelona,
                                 Spain</strong>
                             <div class="description mt-2">
-                                Graduation with Distinction.<br />
-                                Developed web server (with support for WebSocket protocol and
+                                Principal subjects: mathematics, informatics, technological physics, control systems, numeric processes, circuit design, robotics and systems theory.
+                                <p class="mt-2">
+                                Thesis: Developed web server (with support for WebSocket protocol and
                                 secured communications) for an embedded PC running an embedded Linux operating system
                                 which connected to voltage sags emulator through a CAN bus to provide real-time charts
                                 and sensor readings, as well as a way to remotely control the emulator (C++, Qt,
-                                SQlite).</div>
+                                SQlite).</p></div>
+                                <hr />
                     </div>
                 </div>
-            </div>
-            <div class="col-6">
                 <div class="row about-box">
                     <div class="col-1 time">
                         2010<br />- 2013
                     </div>
                     <div class="col content">
-                        <h4>BSc in Systems Engineering <small class="text-muted">Embedded Systems</small></h4>
+                        <h4>BSc. in Systems Engineering with Distinction <small class="text-muted">Embedded Systems</small></h4>
                             <strong class="location">Carinthia University of Applied Sciences / Villach,
                                 Austria</strong>
-                                <div class="description mt-2">Graduation with Distinction.</div>
+                                <div class="description mt-2">Principal subjects: mathematics, informatics, physics, electrical engineering, signal processing and cybernetics.</div>
                                 <hr />
                     </div>
                 </div>
@@ -414,9 +426,9 @@
                     <div class="col content">
                         <h4>Technical College <small class="text-muted">Information and Network Technology</small></h4>
                             <strong class="location">HTBLuVA Villach / Villach, Austria</strong>
+                            <div class="description mt-2">Principal subjects: software developing, network engineering, web technology, information technology.</div>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 </body>
