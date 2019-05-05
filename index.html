@@ -22,7 +22,7 @@
         body {
             background-color: lightgray;
             font-family: 'LatoWebLight';
-            font-size: 16px;
+            font-size: 17px;
             padding: 30px;
         }
 
@@ -54,16 +54,23 @@
             padding: 50px;
         }
 
+        h1 {
+            font-family: 'LatoWebMedium';
+            font-size: 36px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
         h3 {
             font-family: 'LatoWebMedium';
-            font-size: 26px;
+            font-size: 28px;
             letter-spacing: 4px;
             text-transform: uppercase;
         }
 
         h4 {
             font-family: 'LatoWebBold';
-            font-size: 20px;
+            font-size: 22px;
         }
 
         .about-box h4 {
@@ -72,7 +79,7 @@
 
         .about-box .time {
             font-family: 'LatoWebMedium';
-            font-size: 14px;
+            font-size: 17px;
             padding-right: 0;
             color: #999;
             padding-top: 3px;
@@ -89,7 +96,7 @@
 
         .about-box .description {
             display: block;
-            color: #555;
+            color: #999 !important;
         }
 
         .about-box p {
@@ -98,13 +105,14 @@
 
         .about-box .text-muted {
             margin-left: 4px;
+            font-size: 17px;
             color: #999 !important;
         }
 
         .heading {
             text-align: center;
-            margin-bottom: 30px;
-            margin-top: 30px;
+            margin-bottom: 40px;
+            margin-top: 40px;
         }
 
         .heading.boxed {
@@ -117,7 +125,7 @@
 
         .heading h4 {
             font-family: 'LatoWebLight';
-            font-size: 16px;
+            font-size: 17px;
             letter-spacing: 4px;
             text-transform: uppercase;
         }
@@ -126,9 +134,18 @@
             width: 90px;
         }
 
+        hr {
+            border-top: 1px solid #ccc;
+        }
+
         .about-box ul {
-            margin-left: -40px;
+            /* margin-left: -40px; */
             margin-bottom: 0;
+        }
+
+        .about-box hr {
+            margin-top: 24px;
+            margin-bottom: 24px;
         }
 
         .summary .list-inline-item:not(:last-child) {
@@ -146,6 +163,7 @@
             margin-bottom: 40px;
             padding: 30px;
             padding-top: 50px;
+            padding-bottom: 40px;
             border-bottom: 1px solid #ddd;
             text-align: center;
         }
@@ -185,8 +203,8 @@
 <body>
     <div class="worksheet">
         <div class="header dark">
-            <div class="heading">
-                <h3>Roland Grießer.</h3>
+            <div class="heading boxed">
+                <h1>Roland Grießer.</h1>
                 <hr />
                 <h4>Software Engineer.</h4>
             </div>
@@ -222,6 +240,7 @@
         </div>
         <div class="heading">
             <h3><span class="fas fa-laptop-code mr-4"></span>Skills and Certifications.</h3>
+            <hr />
         </div>
         <div class="skills">
         <div class="row about-box">
@@ -244,6 +263,7 @@
         </div>
         <div class="heading">
             <h3><span class="fas fa-briefcase mr-4"></span>Professional Highlights.</h3>
+            <hr />
         </div>
         <div class="row about-box">
             <div class="col-1 time">
@@ -252,7 +272,7 @@
             <div class="col-11 content">
                 <h4>Lead Software Engineer <small class="text-muted">Bitmovin, Klagenfurt, Austria</small></h4>
                 <strong class="location">Bitmovin is a multimedia technology company which provides services that transcode digital video and audio to streaming formats using cloud computing, and streaming media players.</strong>
-                <em class="description mt-2">
+                <div class="description mt-2">
                     <ul>
                         <li>Led cross-platform mobile strategy (Android and iOS) in partnership with CTO to extend
                             Mailbird’s desktop app</li>
@@ -261,10 +281,10 @@
                             architecture, and refactoring code base to make existing libraries usable over multiple
                             platforms (Xamarin)</li>
                     </ul>
-                </em>
+                </div>
+                <hr />
             </div>
         </div>
-        <hr />
         <div class="row about-box">
             <div class="col-1 time">
                 Jul 2015 - Present
@@ -274,7 +294,7 @@
                         Remote</small></h4>
                     <strong class="location">Self-employed consultant offering software and web development, IT
                         consulting, and project management for global clients and individuals.</strong>
-                    <em class="description mt-2">
+                    <div class="description mt-2">
                         <ul>
                             <li>Developed iOS app for coordinating fire departments across Austria; app would
                                 automatically start navigation to emergencies and provide points of interest i.e. fire
@@ -290,10 +310,10 @@
                                 automate analysis and reporting for Austrian gov’t & industry stakeholders (Visual
                                 WebGUI building HTML5 applications in C# & MSSQL)</li>
                         </ul>
-                    </em>
+                    </div>
+                    <hr />
             </div>
         </div>
-        <hr />
         <div class="row about-box">
             <div class="col-1 time">
                 Feb 2017 - Aug 2018
@@ -304,7 +324,7 @@
                         Windows. The software connects all your favorite email, IM,
                         calendar, task and messaging apps into one. Currently 1.5M+ accounts are managed through
                         Mailbird.</strong>
-                    <em class="description mt-2">
+                    <div class="description mt-2">
                         <ul>
                             <li>Led cross-platform mobile strategy (Android and iOS) in partnership with CTO to extend
                                 Mailbird’s desktop app</li>
@@ -313,10 +333,10 @@
                                 architecture, and refactoring code base to make existing libraries usable over multiple
                                 platforms (Xamarin)</li>
                         </ul>
-                    </em>
+                    </div>
+                    <hr />
             </div>
         </div>
-        <hr />
         <div class="row about-box">
             <div class="col-1 time">
                 Aug 2010 - Jun 2015
@@ -327,7 +347,7 @@
                     <strong class="location">Led software development for headquarters of TPA, a leading company
                         offering tax consulting and auditing services in 11 countries and 27
                         offices across Central and South Eastern Europe.</strong>
-                    <em class="description mt-2">
+                    <div class="description mt-2">
                         <ul>
                             <li>Spearheaded creation of master business development system to manage customers and leads
                                 across int’l offices; led feature requirements and systems design, coordination between
@@ -344,12 +364,13 @@
                             <li>Maintained web (Microsoft IIS including PHP and WebDAV) and database servers (MSSQL,
                                 MySQL)</li>
                         </ul>
-                    </em>
+                    </div>
             </div>
         </div>
 
         <div class="heading">
             <h3><span class="fas fa-graduation-cap mr-4"></span>Education.</h3>
+            <hr />
         </div>
 
         <div class="row">
@@ -364,13 +385,13 @@
                                 Austria</strong>
                             <strong class="location">Master's Thesis at Polytechnic University of Catalonia / Barcelona,
                                 Spain</strong>
-                            <em class="description mt-2">
+                            <div class="description mt-2">
                                 Graduation with Distinction.<br />
                                 Developed web server (with support for WebSocket protocol and
                                 secured communications) for an embedded PC running an embedded Linux operating system
                                 which connected to voltage sags emulator through a CAN bus to provide real-time charts
                                 and sensor readings, as well as a way to remotely control the emulator (C++, Qt,
-                                SQlite).</em>
+                                SQlite).</div>
                     </div>
                 </div>
             </div>
@@ -383,10 +404,10 @@
                         <h4>BSc in Systems Engineering <small class="text-muted">Embedded Systems</small></h4>
                             <strong class="location">Carinthia University of Applied Sciences / Villach,
                                 Austria</strong>
-                                <em class="description mt-2">Graduation with Distinction.</em>
+                                <div class="description mt-2">Graduation with Distinction.</div>
+                                <hr />
                     </div>
                 </div>
-                <hr />
                 <div class="row about-box">
                     <div class="col-2 time">
                         2005 - <br />2010
