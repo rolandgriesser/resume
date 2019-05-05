@@ -24,6 +24,7 @@
         @media print {
             body {
                 padding: 0;
+                background-color: white;
             }
         }
 
@@ -92,14 +93,60 @@
         .heading hr {
             width: 90px;
         }
+
+        .summary .list-inline-item:not(:last-child) {
+            margin-right: 16px;
+        }
+
+        .summary .fas,
+        .summary .fab {
+            margin-right: 8px;
+        }
+        
+        .about {
+            background-color: #eee;
+            margin: -30px;
+            margin-bottom: 50px;
+            padding: 30px;
+            padding-top: 50px;
+            border-bottom: 1px solid #ddd;
+        }
+
     </style>
 </head>
 
 <body>
     <div class="worksheet">
-        <div class="heading">
-            <h3>Roland Grießer.</h3>
-            <hr />
+        <div class="about">
+            <div class="heading">
+                <h3>Roland Grießer.</h3>
+                <hr />
+            </div>
+            <div class="summary">
+                <div class="row">
+                    <div class="mx-auto">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><span class="fas fa-fw fa-phone"></span>+43 650 6544670</li>
+                            <li class="list-inline-item"><span class="fas fa-fw fa-envelope"></span>roland@griesser.io</li>
+                            <li class="list-inline-item"><span class="fas fa-fw fa-map-marker-alt"></span>Lusitznweg 167,
+                                9712 Fresach, Austria</li>
+                            <li class="list-inline-item"><span class="fas fa-fw fa-globe"></span>German / English
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mx-auto">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><span class="fas fa-fw fa-globe-europe"></span>griesser.io</li>
+                            <li class="list-inline-item"><span
+                                    class="fab fa-fw fa-linkedin-in"></span>linkedin.com/in/rolandgriesser</li>
+                            <li class="list-inline-item"><span
+                                    class="fab fa-fw fa-github"></span>github.com/rolandgriesser</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="heading">
             <h3><span class="fas fa-briefcase mr-4"></span>Professional Highlights.</h3>
