@@ -90,6 +90,21 @@
             margin-bottom: 40px;
         }
 
+        .heading.boxed {
+            border: 1px solid black;
+            padding: 20px;
+            display: inline-block;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .heading h4 {
+            font-weight: 300;
+            font-size: 16px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
         .heading hr {
             width: 90px;
         }
@@ -103,13 +118,32 @@
             margin-right: 8px;
         }
         
-        .about {
+        .header {
             background-color: #eee;
             margin: -30px;
             margin-bottom: 50px;
             padding: 30px;
             padding-top: 50px;
             border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        .header.dark {
+            background-color: #333;
+            border-bottom: none;
+            color: white; 
+        }
+        
+        .header.dark .heading.boxed {
+            border-color: white;
+        }
+
+        .header hr {
+            border-color: black;
+        }
+
+        .header.dark hr {
+            border-color: white;
         }
 
     </style>
@@ -117,10 +151,11 @@
 
 <body>
     <div class="worksheet">
-        <div class="about">
-            <div class="heading">
+        <div class="header dark">
+            <div class="heading boxed">
                 <h3>Roland Grießer.</h3>
                 <hr />
+                <h4>Software Engineer.</h4>
             </div>
             <div class="summary">
                 <div class="row">
@@ -147,6 +182,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="heading">
+            <h3><span class="fas fa-laptop-code mr-4"></span>Skills and Certifications.</h3>
+            <hr />
         </div>
         <div class="heading">
             <h3><span class="fas fa-briefcase mr-4"></span>Professional Highlights.</h3>
