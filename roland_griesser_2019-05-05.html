@@ -13,7 +13,6 @@
 
 
     <style>
-
         a,
         a:hover {
             text-decoration: none;
@@ -37,7 +36,7 @@
                 padding: 0;
                 background-color: white;
             }
-            
+
             a {
                 text-decoration: none !important;
             }
@@ -103,6 +102,7 @@
         .heading {
             text-align: center;
             margin-bottom: 40px;
+            margin-top: 40px;
         }
 
         .heading.boxed {
@@ -132,7 +132,7 @@
         .summary .fab {
             margin-right: 8px;
         }
-        
+
         .header {
             background-color: #eee;
             margin: -30px;
@@ -142,7 +142,11 @@
             border-bottom: 1px solid #ddd;
             text-align: center;
         }
-        
+
+        .header .heading {
+            margin-top: 0;
+        }
+
         .header.dark {
             background-color: #333;
             border-bottom: none;
@@ -150,9 +154,9 @@
 
         .header.dark,
         .header.dark a {
-            color: white; 
+            color: white;
         }
-        
+
         .header.dark .heading.boxed {
             border-color: white;
         }
@@ -164,7 +168,6 @@
         .header.dark hr {
             border-color: white;
         }
-
     </style>
 </head>
 
@@ -181,8 +184,10 @@
                     <div class="mx-auto">
                         <ul class="list-inline">
                             <li class="list-inline-item"><span class="fas fa-fw fa-phone"></span>+43 650 6544670</li>
-                            <li class="list-inline-item"><span class="fas fa-fw fa-envelope"></span><a href="mailto:roland@griesser.io">roland@griesser.io</a></li>
-                            <li class="list-inline-item"><span class="fas fa-fw fa-map-marker-alt"></span>Lusitznweg 167,
+                            <li class="list-inline-item"><span class="fas fa-fw fa-envelope"></span><a
+                                    href="mailto:roland@griesser.io">roland@griesser.io</a></li>
+                            <li class="list-inline-item"><span class="fas fa-fw fa-map-marker-alt"></span>Lusitznweg
+                                167,
                                 9712 Fresach, Austria</li>
                             <li class="list-inline-item"><span class="fas fa-fw fa-globe"></span>German / English
                             </li>
@@ -192,11 +197,13 @@
                 <div class="row">
                     <div class="mx-auto">
                         <ul class="list-inline">
-                            <li class="list-inline-item"><span class="fas fa-fw fa-globe-europe"></span><a href="https://griesser.io">griesser.io</a></li>
-                            <li class="list-inline-item"><span
-                                    class="fab fa-fw fa-linkedin-in"></span><a href="https://linkedin.com/in/rolandgriesser">linkedin.com/in/rolandgriesser</a></li>
-                            <li class="list-inline-item"><span
-                                    class="fab fa-fw fa-github"></span><a href="https://github.com/rolandgriesser">github.com/rolandgriesser</a></li>
+                            <li class="list-inline-item"><span class="fas fa-fw fa-globe-europe"></span><a
+                                    href="https://griesser.io">griesser.io</a></li>
+                            <li class="list-inline-item"><span class="fab fa-fw fa-linkedin-in"></span><a
+                                    href="https://linkedin.com/in/rolandgriesser">linkedin.com/in/rolandgriesser</a>
+                            </li>
+                            <li class="list-inline-item"><span class="fab fa-fw fa-github"></span><a
+                                    href="https://github.com/rolandgriesser">github.com/rolandgriesser</a></li>
                         </ul>
                     </div>
                 </div>
@@ -206,10 +213,106 @@
             <h3><span class="fas fa-laptop-code mr-4"></span>Skills and Certifications.</h3>
             <hr />
         </div>
+        <div class="row about-box">
+            <div class="col-1 time">
+            </div>
+            <div class="col-10 content">
+                <h4>Skills <small class="text-muted">C#
+                        (WPF, WinForms, Silverlight, ASP.NET, Windows Phone, UWP), JavaScript, React, Redux, SQL (incl.
+                        T-SQL), Java, Android, iOS, PHP, C, C++</small></h4>
+            </div>
+        </div>
+        <div class="row about-box">
+            <div class="col-1 time">
+            </div>
+            <div class="col-11 content">
+                <h4>Certifications <small class="text-muted"> Xamarin Certified Mobile Developer, Microsoft Certified
+                        Professional, Cisco Certified Network Associate (CCNA) 1
+                        to 4, CCNA Exploration: Accessing the WAN, CCNA: Fundamentals of Wireless LANs
+                    </small></h4>
+            </div>
+        </div>
         <div class="heading">
             <h3><span class="fas fa-briefcase mr-4"></span>Professional Highlights.</h3>
             <hr />
         </div>
+        <div class="row about-box">
+            <div class="col-1 time">
+                2013 - 2015
+            </div>
+            <div class="col-11 content">
+                <h4>MSc in Systems Design <small class="text-muted">Remote Sytems</small></h4>
+                <p>
+                    <strong class="location">Carinthia University of Applied Sciences / Villach,
+                        Austria</strong>
+                    <strong class="location">Master's Thesis at Polytechnic University of Catalonia / Barcelona,
+                        Spain</strong>
+                    <em class="description mt-2">Developed web server (with support for WebSocket protocol and
+                        secured communications) for an embedded PC running an embedded Linux operating system
+                        which connected to voltage sags emulator through a CAN bus to provide real-time charts
+                        and sensor readings, as well as a way to remotely control the emulator (C++, Qt,
+                        SQlite).</em>
+                </p>
+            </div>
+        </div>
+        <div class="row about-box">
+            <div class="col-1 time">
+                2013 - 2015
+            </div>
+            <div class="col-11 content">
+                <h4>MSc in Systems Design <small class="text-muted">Remote Sytems</small></h4>
+                <p>
+                    <strong class="location">Carinthia University of Applied Sciences / Villach,
+                        Austria</strong>
+                    <strong class="location">Master's Thesis at Polytechnic University of Catalonia / Barcelona,
+                        Spain</strong>
+                    <em class="description mt-2">Developed web server (with support for WebSocket protocol and
+                        secured communications) for an embedded PC running an embedded Linux operating system
+                        which connected to voltage sags emulator through a CAN bus to provide real-time charts
+                        and sensor readings, as well as a way to remotely control the emulator (C++, Qt,
+                        SQlite).</em>
+                </p>
+            </div>
+        </div>
+        <div class="row about-box">
+            <div class="col-1 time">
+                2013 - 2015
+            </div>
+            <div class="col-11 content">
+                <h4>MSc in Systems Design <small class="text-muted">Remote Sytems</small></h4>
+                <p>
+                    <strong class="location">Carinthia University of Applied Sciences / Villach,
+                        Austria</strong>
+                    <strong class="location">Master's Thesis at Polytechnic University of Catalonia / Barcelona,
+                        Spain</strong>
+                    <em class="description mt-2">Developed web server (with support for WebSocket protocol and
+                        secured communications) for an embedded PC running an embedded Linux operating system
+                        which connected to voltage sags emulator through a CAN bus to provide real-time charts
+                        and sensor readings, as well as a way to remotely control the emulator (C++, Qt,
+                        SQlite).</em>
+                </p>
+            </div>
+        </div>
+        <div class="row about-box">
+            <div class="col-1 time">
+                2013 - 2015
+            </div>
+            <div class="col-11 content">
+                <h4>MSc in Systems Design <small class="text-muted">Remote Sytems</small></h4>
+                <p>
+                    <strong class="location">Carinthia University of Applied Sciences / Villach,
+                        Austria</strong>
+                    <strong class="location">Master's Thesis at Polytechnic University of Catalonia / Barcelona,
+                        Spain</strong>
+                    <em class="description mt-2">Developed web server (with support for WebSocket protocol and
+                        secured communications) for an embedded PC running an embedded Linux operating system
+                        which connected to voltage sags emulator through a CAN bus to provide real-time charts
+                        and sensor readings, as well as a way to remotely control the emulator (C++, Qt,
+                        SQlite).</em>
+                </p>
+            </div>
+        </div>
+
         <div class="heading">
             <h3><span class="fas fa-graduation-cap mr-4"></span>Education.</h3>
             <hr />
