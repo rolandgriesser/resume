@@ -36,29 +36,7 @@
             padding: 0;
         }
 
-        @media print {
-            body {
-                padding: 0;
-                background-color: white;
-                min-width: unset;
-            }
-
-            .worksheet {
-                box-shadow: none;
-            }
-
-            a {
-                text-decoration: none !important;
-            }
-
-            .page-break {
-                height: 80px;
-            }
-        }
-
         .worksheet {
-            /*width: 2480px;
-            height: 3508px;*/
             max-width: 1190px;
             min-width: 1190px;
             /* max-height: 1684px; */
@@ -167,6 +145,10 @@
             margin-right: 16px;
         }
 
+        .about-box:last-child {
+            margin-bottom: 60px;
+        }
+
         .summary .fas,
         .summary .fab {
             margin-right: 8px;
@@ -212,6 +194,30 @@
 
         .header.dark hr {
             border-color: white;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background-color: white;
+                min-width: unset;
+            }
+
+            .worksheet {
+                box-shadow: none;
+            }
+
+            a {
+                text-decoration: none !important;
+            }
+
+            .page-break {
+                height: 80px;
+            }
+
+            .about-box:last-child {
+                margin-bottom: 0;
+            }
         }
     </style>
 </head>
