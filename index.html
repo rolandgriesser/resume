@@ -23,7 +23,11 @@
             background-color: lightgray;
             font-family: 'LatoWebLight';
             font-size: 17px;
-            padding: 30px;
+            /* padding: 30px; */
+        }
+
+        .worksheet-container {
+            margin: 30px;
         }
 
         body,
@@ -41,6 +45,10 @@
             body {
                 padding: 0;
                 background-color: white;
+            }
+
+            .worksheet-container {
+                margin: 0;
             }
 
             a {
@@ -96,10 +104,6 @@
             text-align: right;
         }
 
-        .about-box .content {
-            /* padding-left: 0; */
-        }
-
         .about-box .location {
             font-family: 'LatoWebSemibold';
             display: block;
@@ -139,6 +143,10 @@
             font-size: 17px;
             letter-spacing: 4px;
             text-transform: uppercase;
+        }
+
+        .heading .fa-fw {
+            margin-left: calc(-1.25em - 1.5rem);
         }
 
         .heading hr {
@@ -212,6 +220,7 @@
 </head>
 
 <body>
+    <div class="worksheet-container">
     <div class="worksheet">
         <div class="header dark">
             <div class="heading boxed">
@@ -250,7 +259,7 @@
             </div>
         </div>
         <div class="heading">
-            <h3><span class="fas fa-laptop-code mr-4"></span>Skills and Certifications.</h3>
+            <h3><span class="fas fa-fw fa-laptop-code mr-4"></span>Skills and Certifications.</h3>
             <hr />
         </div>
         <div class="skills">
@@ -274,7 +283,7 @@
         </div>
         </div>
         <div class="heading">
-            <h3><span class="fas fa-briefcase mr-4"></span>Professional Highlights.</h3>
+            <h3><span class="fas fa-fw fa-briefcase mr-4"></span>Professional Highlights.</h3>
             <hr />
         </div>
         <div class="row about-box">
@@ -382,7 +391,7 @@
         </div>
 
         <div class="heading">
-            <h3><span class="fas fa-graduation-cap mr-4"></span>Education.</h3>
+            <h3><span class="fas fa-fw fa-graduation-cap mr-4"></span>Education.</h3>
             <hr />
         </div>
 
@@ -431,7 +440,7 @@
                     </div>
                 </div>
         </div>
-    </div>
+    </div></div>
 </body>
 
 </html>
